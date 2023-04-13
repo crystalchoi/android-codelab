@@ -47,6 +47,7 @@ import com.example.inventory.ui.AppViewModelProvider
 import com.example.inventory.ui.home.HomeViewModel
 import com.example.inventory.ui.navigation.NavigationDestination
 import com.example.inventory.ui.theme.InventoryTheme
+import kotlinx.coroutines.launch
 
 object ItemDetailsDestination : NavigationDestination {
     override val route = "item_details"
@@ -64,6 +65,8 @@ fun ItemDetailsScreen(
 ) {
 
     val uiState by viewModel.uiState.collectAsState()
+
+    val coroutineScope = rememberCoroutineScope()
 
     Scaffold(
         topBar = {
@@ -88,8 +91,16 @@ fun ItemDetailsScreen(
     ) { innerPadding ->
         ItemDetailsBody(
             itemUiState = uiState,
-            onSellItem = {  },
-            onDelete = { },
+            onSellItem = {
+                coroutineScope.launch {
+                    viewModel.updateItem()
+                }
+            },
+            onDelete = {
+                coroutineScope.launch {
+                    viewModel.deleteItem()
+                }
+            },
             modifier = modifier.padding(innerPadding)
         )
     }

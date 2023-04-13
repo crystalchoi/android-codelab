@@ -21,20 +21,35 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.inventory.data.ItemsRepository
+import kotlinx.coroutines.flow.*
 
 /**
  * ViewModel to retrieve and update an item from the [ItemsRepository]'s data source.
  */
 class ItemEditViewModel(
-    savedStateHandle: SavedStateHandle
+    savedStateHandle: SavedStateHandle,
+    private val itemsRepository: ItemsRepository
 ) : ViewModel() {
+
+
+    private val itemId: Int = checkNotNull(savedStateHandle[ItemDetailsDestination.itemIdArg])
 
     /**
      * Holds current item ui state
      */
     var itemUiState by mutableStateOf(ItemUiState())
         private set
+
+    val uiState: StateFlow<ItemUiState> =  itemsRepository.getItemStream(itemId)
+        .filterNotNull()
+        .map {  it.toItemUiState() }
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(ItemDetailsViewModel.TIMEOUT_MILLIS),
+            initialValue = ItemUiState(id = itemId)
+        )
 
     private val itemId: Int = checkNotNull(savedStateHandle[ItemEditDestination.itemIdArg])
 
