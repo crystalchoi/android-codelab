@@ -16,12 +16,14 @@
 
 package com.example.inventory.ui.item
 
+import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.example.inventory.data.ItemsRepository
 
+private const val TAG = "ItemEntryViewModel"
 /**
  * View Model to validate and insert items in the Room database.
  */
@@ -39,5 +41,13 @@ class ItemEntryViewModel(private val itemsRepository: ItemsRepository) : ViewMod
      */
     fun updateUiState(newItemUiState: ItemUiState) {
         itemUiState = newItemUiState.copy( actionEnabled = newItemUiState.isValid())
+    }
+
+    suspend fun saveItem() {
+        if (itemUiState.isValid()) {
+            itemsRepository.insertItem(itemUiState.toItem())
+        } else {
+            Log.d(TAG, "invalid $itemUiState")
+        }
     }
 }
