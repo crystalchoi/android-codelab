@@ -20,5 +20,4 @@
     <string name="stop_name">Stop Name</string>
     <string name="route_stop_name">Stop</string>
     <string name="arrival_time">Arrival Time</string>
-    <string name="back_button">Back</string>
 </resources>

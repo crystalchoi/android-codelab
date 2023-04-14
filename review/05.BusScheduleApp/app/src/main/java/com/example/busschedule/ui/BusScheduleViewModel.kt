@@ -29,29 +29,20 @@ import kotlinx.coroutines.flow.*
 class BusScheduleViewModel(savedStateHandle: SavedStateHandle,
                            private val itemsRepository: ItemsRepository): ViewModel() {
 
+//    val homeUiState: StateFlow<HomeUiState> =
+//        itemsRepository.getAllItemsStream().map { HomeUiState(it) }.stateIn(
+//            scope = viewModelScope,
+//            started = SharingStarted.WhileSubscribed(TIMEOUT_MILLIS),
+//            initialValue = HomeUiState()
+//        )
 
-    val homeUiState: StateFlow<HomeUiState> =
-        itemsRepository.getAllItemsStream().map { HomeUiState(it) }.stateIn(
-            scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(TIMEOUT_MILLIS),
-            initialValue = HomeUiState()
-        )
 
     // Get example bus schedule from Room DB
-//    fun getFullSchedule(): Flow<List<BusSchedule>> {
-//
-//    }
-
+    fun getFullSchedule(): Flow<List<BusSchedule>>  = itemsRepository.getAllItemsStream()
 
     // Get example bus schedule by stop
-    fun getScheduleFor(stopName: String): Flow<List<BusSchedule>> =
-        flowOf(
-            listOf(
-                BusSchedule(1, "Example Street", 0),
-                BusSchedule(2, "XXXXX Street", 0),
-                BusSchedule(3, "YYYYY Street", 0)
-            )
-        )
+    fun getScheduleFor(stopName: String): Flow<List<BusSchedule>> = itemsRepository.getStopNameStream(stopName = stopName)
+
 
     companion object {
         val factory : ViewModelProvider.Factory = viewModelFactory {

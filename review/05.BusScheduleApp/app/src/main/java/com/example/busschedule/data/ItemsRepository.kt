@@ -35,6 +35,7 @@ interface ItemsRepository {
      */
     fun getItemStream(id: Int): Flow<BusSchedule?>
 
+    fun getStopNameStream(stopName: String): Flow<List<BusSchedule>>
     /**
      * Insert item in the data source
      */

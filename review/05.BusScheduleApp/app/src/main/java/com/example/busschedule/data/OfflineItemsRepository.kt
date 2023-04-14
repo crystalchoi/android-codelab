@@ -22,9 +22,12 @@ import kotlinx.coroutines.flow.Flow
 
 
 class OfflineItemsRepository(private val itemDao: BusScheduleDao) : ItemsRepository {
-    override fun getAllItemsStream(): Flow<List<BusSchedule>> = itemDao.getAllItems()
+    override fun getAllItemsStream(): Flow<List<BusSchedule>> {
+        return itemDao.getAllItems()
+    }
 
     override fun getItemStream(id: Int): Flow<BusSchedule?> = itemDao.getItem(id)
+    override fun getStopNameStream(stopName: String): Flow<List<BusSchedule>> = itemDao.getStopName(stopName)
 
     override suspend fun insertItem(item: BusSchedule) = itemDao.insert(item)
 

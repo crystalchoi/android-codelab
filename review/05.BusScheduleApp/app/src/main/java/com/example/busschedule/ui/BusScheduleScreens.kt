@@ -16,6 +16,7 @@
 
 package com.example.busschedule.ui
 
+import android.util.Log
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -73,10 +74,11 @@ val sampleList =  listOf(
 
 @Composable
 fun FullScheduleScreen(
-    busSchedules: List<BusSchedule> = sampleList,
+    busSchedules: List<BusSchedule>,
     onScheduleClick: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    Log.d("FullScheduleScreen", "size=${busSchedules.size}")
     BusScheduleScreen(
         busSchedules = busSchedules,
         onScheduleClick = onScheduleClick,
