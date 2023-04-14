@@ -38,8 +38,6 @@ class HomeViewModel(itemsRepository: ItemsRepository) : ViewModel() {
             initialValue = HomeUiState()
         )
 
-
-
     companion object {
         private const val TIMEOUT_MILLIS = 5_000L
     }

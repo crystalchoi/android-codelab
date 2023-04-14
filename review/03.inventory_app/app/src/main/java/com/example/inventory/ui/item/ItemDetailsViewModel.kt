@@ -16,6 +16,9 @@
 
 package com.example.inventory.ui.item
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -41,14 +44,20 @@ class ItemDetailsViewModel(
             initialValue = ItemUiState(id = itemId)
         )
 
+    var currentUiState by mutableStateOf(uiState.value)
+        private set
+
     suspend fun deleteItem() {
         if (uiState.value.isValid()) {
             itemsRepository.deleteItem(uiState.value.toItem())
         }
     }
 
-    suspend fun updateItem() {
-        if (uiState.value.isValid()) {
+    suspend fun sellItem(soldItemUiState: ItemUiState) {
+        val leftItemUiState = uiState.value.copy(quantity =
+        (uiState.value.quantity.toInt() - soldItemUiState.quantity.toInt()).toString())
+
+        if (leftItemUiState.isValid()) {
             itemsRepository.updateItem(uiState.value.toItem())
         }
     }

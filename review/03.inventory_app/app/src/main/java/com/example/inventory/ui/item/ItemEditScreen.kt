@@ -16,9 +16,13 @@
 
 package com.example.inventory.ui.item
 
+import android.util.Log
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -28,6 +32,7 @@ import com.example.inventory.R
 import com.example.inventory.ui.AppViewModelProvider
 import com.example.inventory.ui.navigation.NavigationDestination
 import com.example.inventory.ui.theme.InventoryTheme
+import kotlinx.coroutines.launch
 
 object ItemEditDestination : NavigationDestination {
     override val route = "item_edit"
@@ -43,6 +48,12 @@ fun ItemEditScreen(
     modifier: Modifier = Modifier,
     viewModel: ItemEditViewModel = viewModel(factory = AppViewModelProvider.Factory)
 ) {
+
+    val coroutineScope = rememberCoroutineScope()
+
+    val uiState by viewModel.uiState.collectAsState()
+    Log.d("EditViewModel", "${uiState.id} ${uiState.name} ${uiState.price} ${uiState.quantity} ${uiState.actionEnabled}")
+
     Scaffold(
         topBar = {
             InventoryTopAppBar(
@@ -53,9 +64,17 @@ fun ItemEditScreen(
         }
     ) { innerPadding ->
         ItemEntryBody(
-            itemUiState = viewModel.itemUiState,
-            onItemValueChange = { },
-            onSaveClick = { },
+            itemUiState = uiState.copy(actionEnabled = true),
+            onItemValueChange = {
+                viewModel.updateUiState(it)
+                Log.d("EditViewModel", "${it.id} ${it.name} ${it.price} ${it.quantity} ${it.actionEnabled}")
+            },
+            onSaveClick = {
+                coroutineScope.launch {
+                    viewModel.saveItem()
+                    navigateBack()
+                }
+            },
             modifier = modifier.padding(innerPadding)
         )
     }

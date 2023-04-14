@@ -16,6 +16,7 @@
 
 package com.example.inventory.ui.item
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -41,6 +42,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.room.util.TableInfo
 import com.example.inventory.InventoryTopAppBar
 import com.example.inventory.R
 import com.example.inventory.ui.AppViewModelProvider
@@ -66,6 +68,10 @@ fun ItemDetailsScreen(
 
     val uiState by viewModel.uiState.collectAsState()
 
+    Log.d("DetailViewModel", "${uiState.id} ${uiState.name} ${uiState.price} ${uiState.quantity} ${uiState.actionEnabled}")
+
+    var soldItemUiState by remember { mutableStateOf<ItemUiState?>(null) }
+
     val coroutineScope = rememberCoroutineScope()
 
     Scaffold(
@@ -78,7 +84,7 @@ fun ItemDetailsScreen(
         },
         floatingActionButton = {
             FloatingActionButton(
-                onClick = { navigateToEditItem(0) },
+                onClick = { navigateToEditItem(uiState.id) },
                 modifier = Modifier.navigationBarsPadding()
             ) {
                 Icon(
@@ -92,16 +98,22 @@ fun ItemDetailsScreen(
         ItemDetailsBody(
             itemUiState = uiState,
             onSellItem = {
-                coroutineScope.launch {
-                    viewModel.updateItem()
+                soldItemUiState?.let {
+                    coroutineScope.launch {
+                        viewModel.sellItem(soldItemUiState!!)
+                        soldItemUiState = null
+                        navigateBack()
+                    }
                 }
             },
             onDelete = {
                 coroutineScope.launch {
                     viewModel.deleteItem()
+                    navigateBack()
                 }
             },
-            modifier = modifier.padding(innerPadding)
+            modifier = modifier.padding(innerPadding),
+            onValueChangeForSell = { soldItemUiState  = uiState.copy(quantity = it) }
         )
     }
 }
@@ -111,8 +123,10 @@ private fun ItemDetailsBody(
     itemUiState: ItemUiState,
     onSellItem: () -> Unit,
     onDelete: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onValueChangeForSell: (String)->Unit = {}
 ) {
+
     Column(
         modifier = modifier
             .padding(16.dp)
@@ -120,11 +134,16 @@ private fun ItemDetailsBody(
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         var deleteConfirmationRequired by rememberSaveable { mutableStateOf(false) }
-        ItemInputForm(itemUiState = itemUiState, enabled = false)
+        var soldQuantityFlag by rememberSaveable { mutableStateOf(false) }
+
+        ItemInputForm(itemUiState = itemUiState, enabled = arrayOf(false, false, true)
+            , onValueChange = { onValueChangeForSell(it.quantity)
+                soldQuantityFlag = true
+            })
         Button(
             onClick = onSellItem,
             modifier = Modifier.fillMaxWidth(),
-            enabled = itemUiState.actionEnabled
+            enabled = (itemUiState.actionEnabled || soldQuantityFlag)
         ) {
             Text(stringResource(R.string.sell))
         }

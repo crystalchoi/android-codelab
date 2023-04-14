@@ -23,7 +23,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.example.inventory.data.ItemsRepository
 
-private const val TAG = "ItemEntryViewModel"
+private const val TAG = "EntryViewModel"
 /**
  * View Model to validate and insert items in the Room database.
  */

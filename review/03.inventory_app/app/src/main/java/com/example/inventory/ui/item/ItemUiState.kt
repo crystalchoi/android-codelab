@@ -52,6 +52,10 @@ fun Item.toItemUiState(actionEnabled: Boolean = false): ItemUiState = ItemUiStat
     actionEnabled = actionEnabled
 )
 
+
 fun ItemUiState.isValid() : Boolean {
-    return name.isNotBlank() && price.isNotBlank() && quantity.isNotBlank()
- }
+    return name.isNotBlank()
+            && price.isNotBlank()
+            && quantity.isNotBlank()
+            && (price.toUIntOrNull() != null ||  quantity.toUIntOrNull() != null)
+}

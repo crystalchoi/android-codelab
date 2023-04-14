@@ -16,6 +16,7 @@
 
 package com.example.inventory.ui.item
 
+import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -24,6 +25,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.inventory.data.ItemsRepository
 import kotlinx.coroutines.flow.*
+
+
+private const val TAG = "EditViewModel"
 
 /**
  * ViewModel to retrieve and update an item from the [ItemsRepository]'s data source.
@@ -34,23 +38,40 @@ class ItemEditViewModel(
 ) : ViewModel() {
 
 
-    private val itemId: Int = checkNotNull(savedStateHandle[ItemDetailsDestination.itemIdArg])
+
+    private val itemId: Int = checkNotNull(savedStateHandle[ItemEditDestination.itemIdArg])
 
     /**
      * Holds current item ui state
      */
-    var itemUiState by mutableStateOf(ItemUiState())
-        private set
+
 
     val uiState: StateFlow<ItemUiState> =  itemsRepository.getItemStream(itemId)
         .filterNotNull()
         .map {  it.toItemUiState() }
         .stateIn(
             scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(ItemDetailsViewModel.TIMEOUT_MILLIS),
+            started = SharingStarted.WhileSubscribed(ItemEditViewModel.TIMEOUT_MILLIS),
             initialValue = ItemUiState(id = itemId)
         )
 
-    private val itemId: Int = checkNotNull(savedStateHandle[ItemEditDestination.itemIdArg])
+    var currentUiState by mutableStateOf(uiState.value)
+        private set
+
+    fun updateUiState(newState: ItemUiState) {
+        currentUiState = newState.copy()
+    }
+
+    suspend fun saveItem() {
+        if (currentUiState.isValid()) {
+            itemsRepository.updateItem(currentUiState.toItem())
+        } else {
+            Log.d(TAG, "invalid $currentUiState")
+        }
+    }
+
+    companion object {
+        private const val TIMEOUT_MILLIS = 5_000L
+    }
 
 }

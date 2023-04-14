@@ -16,6 +16,7 @@
 
 package com.example.inventory.ui.item
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -26,12 +27,14 @@ import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.room.util.TableInfo
 import com.example.inventory.InventoryTopAppBar
 import com.example.inventory.R
 import com.example.inventory.ui.AppViewModelProvider
@@ -86,6 +89,7 @@ fun ItemEntryBody(
     onSaveClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+
     Column(
         modifier = modifier
             .fillMaxWidth()
@@ -96,7 +100,7 @@ fun ItemEntryBody(
         Button(
             onClick = onSaveClick,
             enabled = itemUiState.actionEnabled,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
         ) {
             Text(stringResource(R.string.save_action))
         }
@@ -108,35 +112,48 @@ fun ItemInputForm(
     itemUiState: ItemUiState,
     modifier: Modifier = Modifier,
     onValueChange: (ItemUiState) -> Unit = {},
-    enabled: Boolean = true
+    enabled: Array<Boolean> = arrayOf(true, true, true)
 ) {
+
+    var uiState: ItemUiState by remember {
+        mutableStateOf(itemUiState)
+    }
+
+    Log.d("InputForm View", "${uiState.id} ${uiState.name} ${uiState.price} ${uiState.quantity} ${uiState.actionEnabled}")
 
     Column(modifier = modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         OutlinedTextField(
-            value = itemUiState.name,
-            onValueChange = { onValueChange(itemUiState.copy(name = it)) },
+            value = uiState.name,
+            onValueChange = { onValueChange(itemUiState.copy(name = it))
+                uiState = uiState.copy(name = it)
+                            },
             label = { Text(stringResource(R.string.item_name_req)) },
             modifier = Modifier.fillMaxWidth(),
-            enabled = enabled,
+            enabled = enabled[0],
             singleLine = true
         )
         OutlinedTextField(
-            value = itemUiState.price,
-            onValueChange = { onValueChange(itemUiState.copy(price = it)) },
+            value = uiState.price,
+            onValueChange = { onValueChange(itemUiState.copy(price = it))
+                uiState = uiState.copy(price = it)
+                            },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
             label = { Text(stringResource(R.string.item_price_req)) },
             leadingIcon = { Text(Currency.getInstance(Locale.getDefault()).symbol) },
             modifier = Modifier.fillMaxWidth(),
-            enabled = enabled,
+            enabled = enabled[1],
             singleLine = true
         )
         OutlinedTextField(
-            value = itemUiState.quantity,
-            onValueChange = { onValueChange(itemUiState.copy(quantity = it)) },
+            value = uiState.quantity,
+            onValueChange = {
+                onValueChange(itemUiState.copy(quantity = it))
+                uiState = uiState.copy(quantity = it)
+                            },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             label = { Text(stringResource(R.string.quantity_req)) },
             modifier = Modifier.fillMaxWidth(),
-            enabled = enabled,
+            enabled = enabled[2],
             singleLine = true
         )
     }
