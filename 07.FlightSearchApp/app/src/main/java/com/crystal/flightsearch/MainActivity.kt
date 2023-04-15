@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.crystal.flightsearch.ui.FlightSearchApp
 import com.crystal.flightsearch.ui.theme.FlightSearchTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,22 +23,19 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    FlightSearchApp("Android")
+                    FlightSearchApp()
                 }
             }
         }
     }
 }
 
-@Composable
-fun FlightSearchApp(name: String) {
-    Text(text = "Hello $name!")
-}
+
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     FlightSearchTheme {
-        FlightSearchApp("Android")
+        FlightSearchApp()
     }
 }
