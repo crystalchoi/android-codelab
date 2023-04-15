@@ -16,6 +16,7 @@
 
 package com.example.dessertrelease.ui
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -75,6 +76,7 @@ private fun DessertReleaseApp(
     modifier: Modifier = Modifier
 ) {
     val isLinearLayout = uiState.isLinearLayout
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -82,6 +84,7 @@ private fun DessertReleaseApp(
                 actions = {
                     IconButton(
                         onClick = {
+                            Log.d("Composable", "onClick isLinearLayout: $isLinearLayout")
                             selectLayout(!isLinearLayout)
                         }
                     ) {
