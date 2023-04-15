@@ -29,6 +29,8 @@ class OfflineItemsRepository(private val itemDao: BusScheduleDao) : ItemsReposit
     override fun getItemStream(id: Int): Flow<BusSchedule?> = itemDao.getItem(id)
     override fun getStopNameStream(stopName: String): Flow<List<BusSchedule>> = itemDao.getStopName(stopName)
 
+    override fun getStopName(stopName: String): Flow<List<BusSchedule>> = itemDao.getStopName(stopName)
+
     override suspend fun insertItem(item: BusSchedule) = itemDao.insert(item)
 
     override suspend fun deleteItem(item: BusSchedule) = itemDao.delete(item)

@@ -34,7 +34,7 @@ interface ItemsRepository {
      * Retrieve an item from the given data source that matches with the [id].
      */
     fun getItemStream(id: Int): Flow<BusSchedule?>
-
+    fun getStopName(stopName: String): Flow<List<BusSchedule>>
     fun getStopNameStream(stopName: String): Flow<List<BusSchedule>>
     /**
      * Insert item in the data source
