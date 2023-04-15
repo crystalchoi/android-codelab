@@ -12,7 +12,6 @@ import com.crystal.flightsearch.data.AirportDao
 import com.crystal.flightsearch.data.FavoriteDao
 import kotlinx.coroutines.flow.Flow
 
-
 class HomeViewModel(
     private val airportDao: AirportDao,
     private val favoriteDao: FavoriteDao,
