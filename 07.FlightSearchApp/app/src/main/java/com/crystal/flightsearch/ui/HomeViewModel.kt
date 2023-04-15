@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.AP
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.room.Dao
-import com.crystal.flightsearch.BusScheduleApplication
 import com.crystal.flightsearch.FlightApplication
 import com.crystal.flightsearch.data.Airport
 import com.crystal.flightsearch.data.AirportDao
