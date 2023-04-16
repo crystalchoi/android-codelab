@@ -13,7 +13,7 @@ interface FlightRepository {
 
     fun getAllFavorites(): Flow<List<Favorite>>
     fun getFavorite(id: Int): Flow<Favorite?>
-    fun getFavoriteCode(code: String): Flow<List<Favorite>>
+    fun getFavoriteMatchedCode(code: String): Flow<List<Favorite>>
     suspend fun insertItem(item: Favorite)
     suspend fun deleteItem(item: Favorite)
     suspend fun updateItem(item: Favorite)

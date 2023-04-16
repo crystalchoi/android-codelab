@@ -97,16 +97,20 @@ fun FlightSearchApp(
                     if (currentInput == "") {
                         Log.d(TAG, "fulll list size: ${airportList.itemList.size}")
 
-                        Text("HomeScreen")
-                        AirportList(airportList = airportList.itemList, onScheduleClick = {
-                            Log.d(TAG, "$it")
+                        Text("Full")
+                        AirportList(airportList = airportList.itemList,
+                            onScheduleClick = { airportCode ->
+                                Log.d(TAG, "$it")
+                                navController.navigate(
+                                    "${BusScheduleScreens.RouteSchedule.name}/$airportCode"
+                                )
                         })
                     }
                     else {
                         val matchedAirport by viewModel.getAirportName("%$currentInput%")
                             .collectAsState(emptyList())
                         Log.d(TAG, "matched list size: ${matchedAirport.size}")
-                        Text("FavoriteScreen")
+                        Text("Matched")
 
                         AirportList(airportList = matchedAirport, onScheduleClick = {
                             Log.d(TAG, "$it")
@@ -132,16 +136,16 @@ fun FlightSearchApp(
                 route = BusScheduleScreens.RouteSchedule.name + "/{$busRouteArgument}",
                 arguments = listOf(navArgument(busRouteArgument) { type = NavType.StringType })
             ) { backStackEntry ->
-                val stopName = backStackEntry.arguments?.getString(busRouteArgument)
+                val airportCode = backStackEntry.arguments?.getString(busRouteArgument)
                     ?: error("busRouteArgument cannot be null")
-                val routeSchedule by viewModel.getAirportName(currentInput).collectAsState(emptyList())
+                val routeSchedule by viewModel.getFavoriteCode(airportCode).collectAsState(emptyList())
                 Text("FavoriteScreen")
 
-               //                RouteScheduleScreen(
-//                    stopName = stopName,
-//                    busSchedules = routeSchedule,
-//                    onBack = { onBackHandler() }
-//                )
+                               RouteScheduleScreen(
+                    airportCode = airportCode,
+                    busSchedules = routeSchedule,
+                    onBack = { onBackHandler() }
+                )
             }
         }
     }
@@ -153,13 +157,13 @@ fun FlightSearchApp(
 fun AirportList(
     airportList: List<Airport>,
     modifier: Modifier = Modifier,
-    airportName: String? = null,
+    airportCode: String? = null,
     onScheduleClick: ((String) -> Unit)? = null,
 ) {
-    val airportNameText = if (airportName == null) {
+    val airportNameText = if (airportCode == null) {
         stringResource(R.string.airport_name)
     } else {
-        "$airportName"
+        "$airportCode"
 //        "$airportName ${stringResource(R.string.route_stop_name)}"
     }
 
@@ -188,6 +192,7 @@ fun FavoriteScreen(
     modifier: Modifier = Modifier,
     onScheduleClick: ((String) -> Unit)? = null
 ) {
+
     LazyColumn(modifier = modifier, contentPadding = PaddingValues(vertical = 8.dp)) {
         items(
             items = airportList,

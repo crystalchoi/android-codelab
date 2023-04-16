@@ -20,7 +20,7 @@ interface FavoriteDao {
 
     @Query("SELECT * from favorite WHERE departure_code LIKE  :code " +
             "OR destination_code LIKE :code ORDER BY departure_code ASC")
-    fun getFavoriteCode(code: String): Flow<List<Favorite>>
+    fun getFavoriteMatchedCode(code: String): Flow<List<Favorite>>
 
     @Query("SELECT * from favorite ORDER BY departure_code ASC")
     fun getAllFavorites(): Flow<List<Favorite>>

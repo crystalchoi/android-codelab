@@ -12,6 +12,7 @@ import androidx.room.Dao
 import com.crystal.flightsearch.FlightApplication
 import com.crystal.flightsearch.data.Airport
 import com.crystal.flightsearch.data.AirportDao
+import com.crystal.flightsearch.data.Favorite
 import com.crystal.flightsearch.data.FavoriteDao
 import com.crystal.flightsearch.data.FlightRepository
 import kotlinx.coroutines.flow.Flow
@@ -33,22 +34,10 @@ class HomeViewModel(
             initialValue = HomeUiState()
         )
     fun getAllAirports(): Flow<List<Airport>> = flightRepository.getAllAirports()
-//        = flow {
-//            listOf(
-//                Airport(1, "LA", "Los Angelos", 1000),
-//                Airport(2, "AA", "Los Angelos", 1000),
-//                Airport(3, "BB", "Los Angelos", 1000),
-//                Airport(4, "LALA", "Los Angelos", 1000),
-//                Airport(5, "LAS", "Los Angelos", 1000),
-//            )
-//        }
     // Get bus schedule based on the stop name from Room DB
     fun getAirportName(name: String): Flow<List<Airport>> = flightRepository.getAirportName(name)
-//            = flow {
-//        listOf(
-//            Airport(1, "LA", "Los Angelos", 1000),
-//        )
-//    }
+    fun getFavoriteMatchedCode(code: String): Flow<List<Favorite>>
+        = flightRepository.getFavoriteMatchedCode(code)
 
     companion object {
         val factory : ViewModelProvider.Factory = viewModelFactory {
