@@ -122,5 +122,5 @@ fun BusScheduleDetails(
                 )
             }
         }
-    }
+    }중
 }
