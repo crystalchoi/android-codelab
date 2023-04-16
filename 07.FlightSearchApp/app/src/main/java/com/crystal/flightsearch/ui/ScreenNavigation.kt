@@ -68,6 +68,8 @@ fun FlightSearchApp(
         navController.navigateUp()
     }
 
+    var currentInput: String by remember { mutableStateOf("") }
+
     Scaffold(
         topBar = {
             FlightTopAppBar(
@@ -84,19 +86,32 @@ fun FlightSearchApp(
         ) {
             composable(BusScheduleScreens.FullSchedule.name) {
 
-                var currentInput: String by remember { mutableStateOf("") }
+
 
                 Column() {
 
 
                     TextField(value = currentInput, onValueChange = { currentInput = it })
 
-                    Log.d(TAG, "size: ${airportList.itemList.size}")
 
-                    AirportList(airportList = airportList.itemList, onScheduleClick = {
-                        Log.d(TAG, "$it")
-                    })
+                    if (currentInput == "") {
+                        Log.d(TAG, "fulll list size: ${airportList.itemList.size}")
 
+                        Text("HomeScreen")
+                        AirportList(airportList = airportList.itemList, onScheduleClick = {
+                            Log.d(TAG, "$it")
+                        })
+                    }
+                    else {
+                        val matchedAirport by viewModel.getAirportName("%$currentInput%")
+                            .collectAsState(emptyList())
+                        Log.d(TAG, "matched list size: ${matchedAirport.size}")
+                        Text("FavoriteScreen")
+
+                        AirportList(airportList = matchedAirport, onScheduleClick = {
+                            Log.d(TAG, "$it")
+                        })
+                    }
                 }
 
 
@@ -119,9 +134,10 @@ fun FlightSearchApp(
             ) { backStackEntry ->
                 val stopName = backStackEntry.arguments?.getString(busRouteArgument)
                     ?: error("busRouteArgument cannot be null")
-//                val routeSchedule by viewModel.getScheduleFor(stopName).collectAsState(emptyList())
+                val routeSchedule by viewModel.getAirportName(currentInput).collectAsState(emptyList())
                 Text("FavoriteScreen")
-//                RouteScheduleScreen(
+
+               //                RouteScheduleScreen(
 //                    stopName = stopName,
 //                    busSchedules = routeSchedule,
 //                    onBack = { onBackHandler() }
