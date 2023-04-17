@@ -21,25 +21,29 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.crystal.flightsearch.R
 import com.crystal.flightsearch.data.Airport
+import com.crystal.flightsearch.data.Favorite
 import java.text.SimpleDateFormat
 import java.util.Locale
 
 @Composable
 fun RouteScheduleScreen(
     airportCode: String,
-//    busSchedules: List<Airport>,
+    favoriteMatchedList: List<Favorite> = emptyList(),
     modifier: Modifier = Modifier,
     onBack: () -> Unit = {}
 ) {
     BackHandler { onBack() }
-    BusScheduleScreen(
-//        busSchedules = busSchedules,
-        modifier = modifier,
-        airportCode = airportCode
-    )
+
+    Text(airportCode)
+
+//    BusScheduleScreen(
+////        busSchedules = busSchedules,
+//        modifier = modifier,
+//        airportCode = airportCode
+//    )
 }
 
-
+/*
 @Composable
 fun BusScheduleScreen(
 //    busSchedules: List<BusSchedule>,
@@ -122,5 +126,6 @@ fun BusScheduleDetails(
                 )
             }
         }
-    }중
+    }
 }
+*/

@@ -118,9 +118,6 @@ fun FlightSearchApp(
                     }
                 }
 
-
-
-
 //                FullScheduleScreen(
 //                    busSchedules = fullSchedule.itemList,
 //                    onScheduleClick = { busStopName ->
@@ -138,12 +135,12 @@ fun FlightSearchApp(
             ) { backStackEntry ->
                 val airportCode = backStackEntry.arguments?.getString(busRouteArgument)
                     ?: error("busRouteArgument cannot be null")
-                val routeSchedule by viewModel.getFavoriteCode(airportCode).collectAsState(emptyList())
+                val routeSchedule by viewModel.getFavoriteMatchedCode(airportCode).collectAsState(emptyList())
                 Text("FavoriteScreen")
 
                                RouteScheduleScreen(
                     airportCode = airportCode,
-                    busSchedules = routeSchedule,
+                    favoriteMatchedList = routeSchedule,
                     onBack = { onBackHandler() }
                 )
             }
@@ -259,6 +256,7 @@ fun FlightTopAppBar(
     onBackClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+
     if (canNavigateBack) {
         TopAppBar(
             title = { Text(title) },
