@@ -1,4 +1,4 @@
-package com.example.dessertrelease.data
+package com.crystal.flightsearch.data
 
 import android.util.Log
 import androidx.datastore.core.DataStore
@@ -6,19 +6,17 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.emptyPreferences
-import androidx.datastore.preferences.protobuf.Internal.BooleanList
+import androidx.datastore.preferences.core.stringPreferencesKey
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
 import java.io.IOException
 
-
-private const val TAG = "Repository"
 class UserPreferencesRepository(
     private val dataStore: DataStore<Preferences>
 ){
 
-    val isLinearLayout: Flow<Boolean> = dataStore.data
+    val storedQuery: Flow<String> = dataStore.data
         .catch {
             if(it is IOException) {
                 Log.e(TAG, "Error reading preferences.", it)
@@ -28,18 +26,18 @@ class UserPreferencesRepository(
             }
         }
         .map { preferences ->
-            Log.d(TAG, "pref: ${preferences[IS_LINEAR_LAYOUT]?.toString()}")
-            preferences[IS_LINEAR_LAYOUT] ?: true
+            Log.d(TAG, "pref: ${preferences[STORED_QUERY]?.toString()}")
+            preferences[STORED_QUERY] ?: ""
         }
 
-    suspend fun saveLayoutPreference(isLinearLayout: Boolean) {
+    suspend fun saveStoredQuery(storedQuery: String) {
         dataStore.edit { preferences ->
-            preferences[IS_LINEAR_LAYOUT] = isLinearLayout
+            preferences[STORED_QUERY] = storedQuery
         }
     }
 
     private companion object {
-        val IS_LINEAR_LAYOUT = booleanPreferencesKey("is_linear_layout")
+        val STORED_QUERY = stringPreferencesKey("stored_query")
         const val TAG = "UserPreferencesRepo"
     }
 }

@@ -1,6 +1,5 @@
 package com.crystal.flightsearch.ui
 
-import android.inputmethodservice.Keyboard
 import android.util.Log
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -35,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
+import androidx.navigation.Navigation.findNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -45,10 +45,19 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 
 
-enum class BusScheduleScreens {
-    FullSchedule,
-    RouteSchedule
+//enum class BusScheduleScreens {
+//    FullSchedule,
+//    RouteSchedule
+//}
+
+
+
+sealed class NavRoutes(val route: String) {
+    object Home: NavRoutes("home")
+    object Favorite: NavRoutes("favorite")
+
 }
+
 
 private const val TAG = "FlightApp"
 
@@ -59,6 +68,9 @@ fun FlightSearchApp(
 ) {
     val navController = rememberNavController()
     val airportList by viewModel.homeUiState.collectAsState()
+    val queryUiState by viewModel.queryUiState.collectAsState()
+
+    var currentInput: String by remember { mutableStateOf(queryUiState.storedQuery) }
 
     val homeScreenTitle = stringResource(R.string.airport_screen_title)
     var topAppBarTitle by remember { mutableStateOf(homeScreenTitle) }
@@ -68,7 +80,7 @@ fun FlightSearchApp(
         navController.navigateUp()
     }
 
-    var currentInput: String by remember { mutableStateOf("") }
+
 
     Scaffold(
         topBar = {
@@ -82,65 +94,46 @@ fun FlightSearchApp(
         NavHost(
             navController = navController,
             modifier = modifier.padding(innerPadding),
-            startDestination = BusScheduleScreens.FullSchedule.name
+            startDestination = NavRoutes.Home.route
         ) {
-            composable(BusScheduleScreens.FullSchedule.name) {
-
-
-
+            composable(NavRoutes.Home.route) {
                 Column() {
+                    CustomTextField(title = "which Airport?",
+                        textState = currentInput,
+                        onTextChange = { currentInput = it})
 
+                    val matchedAirport by viewModel.getAirportName("%$currentInput%")
+                        .collectAsState(emptyList())
 
-                    TextField(value = currentInput, onValueChange = { currentInput = it })
+                    Log.d(TAG, "list size: ${airportList.itemList.size} " +
+                            "matched size: ${matchedAirport.size}")
 
+                    AirportList(airportList = if (currentInput.isEmpty()) airportList.itemList
+                                                   else matchedAirport,
+                        onScheduleClick = { airportCode ->
+                            Log.d(TAG, "$airportCode")
 
-                    if (currentInput == "") {
-                        Log.d(TAG, "fulll list size: ${airportList.itemList.size}")
-
-                        Text("Full")
-                        AirportList(airportList = airportList.itemList,
-                            onScheduleClick = { airportCode ->
-                                Log.d(TAG, "$it")
-                                navController.navigate(
-                                    "${BusScheduleScreens.RouteSchedule.name}/$airportCode"
-                                )
-                        })
-                    }
-                    else {
-                        val matchedAirport by viewModel.getAirportName("%$currentInput%")
-                            .collectAsState(emptyList())
-                        Log.d(TAG, "matched list size: ${matchedAirport.size}")
-                        Text("Matched")
-
-                        AirportList(airportList = matchedAirport, onScheduleClick = {
-                            Log.d(TAG, "$it")
+                            viewModel.saveStoredQuery(airportCode)
+                            navController.navigate(
+                                "${NavRoutes.Favorite.route}/$airportCode"
+                            ) {
+                                launchSingleTop = true
+                                popUpTo(NavRoutes.Home.route)
+                            }
+                            topAppBarTitle = airportCode
                         })
                     }
                 }
 
-//                FullScheduleScreen(
-//                    busSchedules = fullSchedule.itemList,
-//                    onScheduleClick = { busStopName ->
-//                        navController.navigate(
-//                            "${BusScheduleScreens.RouteSchedule.name}/$busStopName"
-//                        )
-//                        topAppBarTitle = busStopName
-//                    }
-//                )
-            }
-            val busRouteArgument = "busRoute"
+            val codeArgument = "code"
             composable(
-                route = BusScheduleScreens.RouteSchedule.name + "/{$busRouteArgument}",
-                arguments = listOf(navArgument(busRouteArgument) { type = NavType.StringType })
+                route = NavRoutes.Favorite.route + "/{$codeArgument}",
+                arguments = listOf(navArgument(codeArgument) { type = NavType.StringType })
             ) { backStackEntry ->
-                val airportCode = backStackEntry.arguments?.getString(busRouteArgument)
+                val airportCode = backStackEntry.arguments?.getString(codeArgument)
                     ?: error("busRouteArgument cannot be null")
-                val routeSchedule by viewModel.getFavoriteMatchedCode(airportCode).collectAsState(emptyList())
-                Text("FavoriteScreen")
-
-                               RouteScheduleScreen(
+                RouteScheduleScreen(
                     airportCode = airportCode,
-                    favoriteMatchedList = routeSchedule,
                     onBack = { onBackHandler() }
                 )
             }
@@ -175,7 +168,7 @@ fun AirportList(
             Text("arrival time??")
         }
         Divider()
-        FavoriteScreen(
+        AirportListBody(
             airportList = airportList,
             onScheduleClick = onScheduleClick
         )
@@ -184,7 +177,7 @@ fun AirportList(
 
 
 @Composable
-fun FavoriteScreen(
+fun AirportListBody(
     airportList: List<Airport>,
     modifier: Modifier = Modifier,
     onScheduleClick: ((String) -> Unit)? = null
@@ -193,13 +186,13 @@ fun FavoriteScreen(
     LazyColumn(modifier = modifier, contentPadding = PaddingValues(vertical = 8.dp)) {
         items(
             items = airportList,
-            key = { busSchedule -> busSchedule.id }
-        ) { schedule ->
+            key = { airport -> airport.id }
+        ) { airport ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .clickable(enabled = onScheduleClick != null) {
-                        onScheduleClick?.invoke(schedule.name)
+                        onScheduleClick?.invoke(airport.code)
                     }
                     .padding(vertical = 16.dp, horizontal = 16.dp),
                 horizontalArrangement = Arrangement.SpaceBetween
@@ -216,7 +209,7 @@ fun FavoriteScreen(
                     )
                 } else {
                     Text(
-                        text = schedule.name,
+                        text = airport.name,
                         style = MaterialTheme.typography.body1.copy(
                             fontSize = 20.sp,
                             fontWeight = FontWeight(300)
@@ -224,7 +217,7 @@ fun FavoriteScreen(
                     )
                 }
                 Text(
-                    text = schedule.code,
+                    text = airport.code,
                     style = MaterialTheme.typography.body1.copy(
                         fontSize = 20.sp,
                         fontWeight = FontWeight(600)
@@ -270,12 +263,13 @@ fun FlightTopAppBar(
                     )
                 }
             },
+            elevation = 12.dp,
             modifier = modifier
         )
     } else {
         TopAppBar(
             title = { Text(title) },
-            modifier = modifier
+            modifier = modifier,
         )
     }
 }

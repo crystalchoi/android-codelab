@@ -27,5 +27,13 @@ abstract class FlightDatabase : RoomDatabase() {
             }
         }
 
+        fun destroyDatabase() {
+            if (Instance?.isOpen == true) {
+                Instance?.close()
+            }
+
+            Instance = null
+        }
+
     }
 }

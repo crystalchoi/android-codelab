@@ -8,7 +8,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import com.crystal.flightsearch.data.AppContainer
 import com.crystal.flightsearch.data.AppDataContainer
 import com.crystal.flightsearch.data.FlightDatabase
-
+import com.crystal.flightsearch.data.UserPreferencesRepository
 
 
 private const val FAVORITE_PREFERENCE_NAME = "favorite_preferences"
@@ -22,11 +22,16 @@ class FlightApplication: Application() {
     lateinit var container: AppContainer
 
     // for DataStore Preferences
-//    lateinit var userPreferencesRepository: UserPreferencesRepository
+    lateinit var userPreferencesRepository: UserPreferencesRepository
 
     override fun onCreate() {
         super.onCreate()
-//        userPreferencesRepository = UserPreferencesRepository(dataStore)
+        userPreferencesRepository = UserPreferencesRepository(dataStore)
         container = AppDataContainer(this)
+    }
+
+    override fun onTerminate() {
+        super.onTerminate()
+        FlightDatabase.destroyDatabase()
     }
 }

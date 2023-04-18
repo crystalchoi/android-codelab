@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FlightSearch</string>
     <string name="back">Back</string>
+    <string name="star">Star</string>
     <string name="airport_screen_title">Airport</string>
     <string name="airport_name">--</string>
 </resources>
