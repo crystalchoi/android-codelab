@@ -1,0 +1,617 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+MERGED from [androidx.work:work-runtime-ktx:2.7.1] /Users/crystal/.gradle/caches/transforms-3/388a5ea487167b83b3f4583aca54ba87/transformed/work-runtime-ktx-2.7.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.6.1] /Users/crystal/.gradle/caches/transforms-3/7912513061762096bd390d7d40fbf87a/transformed/activity-compose-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material:1.3.1] /Users/crystal/.gradle/caches/transforms-3/0a5b57839fd7b97a541af15fb5c480cd/transformed/material-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/crystal/.gradle/caches/transforms-3/35b6f47a195950a3ea56ce96844cd78a/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/crystal/.gradle/caches/transforms-3/6fbda733455041a3aa156019f310cc03/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-livedata:1.3.3] /Users/crystal/.gradle/caches/transforms-3/292a2a1f7b1a9d62912113f5114a3d9d/transformed/runtime-livedata-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple:1.3.1] /Users/crystal/.gradle/caches/transforms-3/346b1b1334f9539b43ec281907a3c4ad/transformed/material-ripple-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation:1.3.1] /Users/crystal/.gradle/caches/transforms-3/476a6ffd70df79cb3e76ffbfb59e836a/transformed/foundation-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cfaa0b58c4d551cb2bd5653d7059f397/transformed/animation-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.3.1] /Users/crystal/.gradle/caches/transforms-3/e7bcabd32b7466f0259da817b6b4f78a/transformed/foundation-layout-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation-core:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cabb7365ffa2a92ae5301cf670440c45/transformed/animation-core-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-core:1.3.1] /Users/crystal/.gradle/caches/transforms-3/e5833edf95a17423f156653fda4bbbf1/transformed/material-icons-core-1.3.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-data:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cf3e0fd02a6da145fb430d83a772ae04/transformed/ui-tooling-data-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.6.1] /Users/crystal/.gradle/caches/transforms-3/eb318e4f64d39f4ec9ddfeddedf92e02/transformed/activity-ktx-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/crystal/.gradle/caches/transforms-3/78b56c00c8867cf6a745860cc9cebe86/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.1] /Users/crystal/.gradle/caches/transforms-3/f1aa0d3e497a0cc8f60a7e018be34eb2/transformed/activity-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/crystal/.gradle/caches/transforms-3/5584101b0846dbf2ae9c8c6d58dbcd14/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/crystal/.gradle/caches/transforms-3/23d237170821e7c0f0c86f18fb966b19/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/crystal/.gradle/caches/transforms-3/53eed1c5af8043bf46d4e2ad0e995e7b/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/27a213b26d0bc1381a1dda68a19462f8/transformed/lifecycle-livedata-ktx-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/8eb215a3a00290fa2484fa38f983b19f/transformed/lifecycle-livedata-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/8fd87b0d79ca1f7787d3f91c83ac2e09/transformed/lifecycle-livedata-core-ktx-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/d7797f6beb3068a5677ccf7f58c304c9/transformed/lifecycle-livedata-core-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/29bb510123548d5dfceca37ba27838d7/transformed/lifecycle-viewmodel-ktx-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/f9eca086d55d66e6deb6cf2e7036fa77/transformed/lifecycle-viewmodel-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/711d5e496713f65f801eb301f7ba2a62/transformed/lifecycle-viewmodel-savedstate-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/f4e432e5a60dc138e159a8341a908e1f/transformed/lifecycle-viewmodel-compose-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui:1.3.3] /Users/crystal/.gradle/caches/transforms-3/ac2e33a7db689d2c4f123dd37c8e67d2/transformed/ui-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/crystal/.gradle/caches/transforms-3/234d77cd977e864b377326b610c33d3c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/crystal/.gradle/caches/transforms-3/6f1c362f917f25d22179de8b0da49b13/transformed/core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/crystal/.gradle/caches/transforms-3/3b0fc9dc645983217ee98c15de795848/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/crystal/.gradle/caches/transforms-3/2c231e0fcd4f695d63c308211bba59ed/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.compose.ui:ui-text:1.3.3] /Users/crystal/.gradle/caches/transforms-3/5cff8d22c4e543bae84be644b5149a1d/transformed/ui-text-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/crystal/.gradle/caches/transforms-3/aa959aa83fc5f22e1df86a2bbfe18bf0/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/crystal/.gradle/caches/transforms-3/cb4a60029c9c76e5380d5c8db91bd2ea/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/crystal/.gradle/caches/transforms-3/6333dbb3fd15bed7dbf9dc3c840cff05/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/crystal/.gradle/caches/transforms-3/8216c4e0252d96c1dcedc063257525aa/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/crystal/.gradle/caches/transforms-3/06ad471a7cb7aecee0a5230384b75f03/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/2a49a553effda2b4db4badbea8933b91/transformed/lifecycle-runtime-ktx-2.6.0-alpha03/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/crystal/.gradle/caches/transforms-3/9b45b21763d01e9b6c4dee7747f6a1ef/transformed/lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/dd603ae1a56270cf7d7b82425b286034/transformed/lifecycle-runtime-2.6.0-alpha03/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/ca176dce8d6709305b7713bbc4403e1f/transformed/lifecycle-runtime-compose-2.6.0-alpha03/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.3.3] /Users/crystal/.gradle/caches/transforms-3/f6cc47f7d813b5b1ecffe1325fd864ae/transformed/ui-tooling-preview-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.3.3] /Users/crystal/.gradle/caches/transforms-3/18b2dafa94996e4a597d1d75a21683fc/transformed/runtime-saveable-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7cfe0e08355756695c776ebfc6bd842d/transformed/ui-graphics-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-unit:1.3.3] /Users/crystal/.gradle/caches/transforms-3/6ee0500b5221808492671fd9f4e08e31/transformed/ui-unit-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-geometry:1.3.3] /Users/crystal/.gradle/caches/transforms-3/1826ab170c8c09b8f6bc84d87e9c9869/transformed/ui-geometry-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime:1.3.3] /Users/crystal/.gradle/caches/transforms-3/4cbb47f92148f858f413bc8804bd2ffa/transformed/runtime-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-util:1.3.3] /Users/crystal/.gradle/caches/transforms-3/108cf31a06d5ad4e05c1f171a027abbb/transformed/ui-util-1.3.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/crystal/.gradle/caches/transforms-3/2ec63acca88fa95546e72233105fab71/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:17:1-50:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/crystal/.gradle/caches/transforms-3/909f276ba94850ba1a8f253fcf24e4f6/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/crystal/.gradle/caches/transforms-3/07ec1f7a09fdfaffd85ba5069a948748/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/crystal/.gradle/caches/transforms-3/ed1d29e47075543afef15106d9625438/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/crystal/.gradle/caches/transforms-3/89193067d1cb253f5c4647362690eeb6/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/crystal/.gradle/caches/transforms-3/ff7b793448ce9d755cbf8936595319d0/transformed/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/crystal/.gradle/caches/transforms-3/d9cbeeb7d23a244947ef331cd7197511/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/crystal/.gradle/caches/transforms-3/bdac9c7382c1ac15bc3cb4de702369e2/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+	package
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:19:5-37
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:18:5-51
+	android:versionCode
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:1-42:12
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:17:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:21:5-77
+	android:name
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:21:22-74
+application
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:22:5-40:19
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:30:5-143:19
+MERGED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:30:5-143:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:24:5-48:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:24:5-48:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/crystal/.gradle/caches/transforms-3/07ec1f7a09fdfaffd85ba5069a948748/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/crystal/.gradle/caches/transforms-3/07ec1f7a09fdfaffd85ba5069a948748/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:26:9-41
+	android:roundIcon
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:27:9-54
+	tools:targetApi
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:29:9-29
+	android:icon
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:25:9-43
+	android:allowBackup
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:28:9-53
+	android:name
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:23:9-46
+activity#com.example.bluromatic.BlurActivity
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:30:9-39:20
+	android:exported
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:33:13-57
+	android:name
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:31:13-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:34:13-38:29
+action#android.intent.action.MAIN
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml:37:27-74
+uses-sdk
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+MERGED from [androidx.work:work-runtime-ktx:2.7.1] /Users/crystal/.gradle/caches/transforms-3/388a5ea487167b83b3f4583aca54ba87/transformed/work-runtime-ktx-2.7.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.7.1] /Users/crystal/.gradle/caches/transforms-3/388a5ea487167b83b3f4583aca54ba87/transformed/work-runtime-ktx-2.7.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.6.1] /Users/crystal/.gradle/caches/transforms-3/7912513061762096bd390d7d40fbf87a/transformed/activity-compose-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.6.1] /Users/crystal/.gradle/caches/transforms-3/7912513061762096bd390d7d40fbf87a/transformed/activity-compose-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.3.1] /Users/crystal/.gradle/caches/transforms-3/0a5b57839fd7b97a541af15fb5c480cd/transformed/material-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.3.1] /Users/crystal/.gradle/caches/transforms-3/0a5b57839fd7b97a541af15fb5c480cd/transformed/material-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/crystal/.gradle/caches/transforms-3/35b6f47a195950a3ea56ce96844cd78a/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/crystal/.gradle/caches/transforms-3/35b6f47a195950a3ea56ce96844cd78a/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/crystal/.gradle/caches/transforms-3/6fbda733455041a3aa156019f310cc03/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/crystal/.gradle/caches/transforms-3/6fbda733455041a3aa156019f310cc03/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.3.3] /Users/crystal/.gradle/caches/transforms-3/292a2a1f7b1a9d62912113f5114a3d9d/transformed/runtime-livedata-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.3.3] /Users/crystal/.gradle/caches/transforms-3/292a2a1f7b1a9d62912113f5114a3d9d/transformed/runtime-livedata-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.3.1] /Users/crystal/.gradle/caches/transforms-3/346b1b1334f9539b43ec281907a3c4ad/transformed/material-ripple-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.3.1] /Users/crystal/.gradle/caches/transforms-3/346b1b1334f9539b43ec281907a3c4ad/transformed/material-ripple-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.3.1] /Users/crystal/.gradle/caches/transforms-3/476a6ffd70df79cb3e76ffbfb59e836a/transformed/foundation-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.3.1] /Users/crystal/.gradle/caches/transforms-3/476a6ffd70df79cb3e76ffbfb59e836a/transformed/foundation-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cfaa0b58c4d551cb2bd5653d7059f397/transformed/animation-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cfaa0b58c4d551cb2bd5653d7059f397/transformed/animation-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.3.1] /Users/crystal/.gradle/caches/transforms-3/e7bcabd32b7466f0259da817b6b4f78a/transformed/foundation-layout-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.3.1] /Users/crystal/.gradle/caches/transforms-3/e7bcabd32b7466f0259da817b6b4f78a/transformed/foundation-layout-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cabb7365ffa2a92ae5301cf670440c45/transformed/animation-core-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cabb7365ffa2a92ae5301cf670440c45/transformed/animation-core-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.3.1] /Users/crystal/.gradle/caches/transforms-3/e5833edf95a17423f156653fda4bbbf1/transformed/material-icons-core-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.3.1] /Users/crystal/.gradle/caches/transforms-3/e5833edf95a17423f156653fda4bbbf1/transformed/material-icons-core-1.3.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cf3e0fd02a6da145fb430d83a772ae04/transformed/ui-tooling-data-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.3.3] /Users/crystal/.gradle/caches/transforms-3/cf3e0fd02a6da145fb430d83a772ae04/transformed/ui-tooling-data-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.1] /Users/crystal/.gradle/caches/transforms-3/eb318e4f64d39f4ec9ddfeddedf92e02/transformed/activity-ktx-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.1] /Users/crystal/.gradle/caches/transforms-3/eb318e4f64d39f4ec9ddfeddedf92e02/transformed/activity-ktx-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/crystal/.gradle/caches/transforms-3/78b56c00c8867cf6a745860cc9cebe86/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/crystal/.gradle/caches/transforms-3/78b56c00c8867cf6a745860cc9cebe86/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.1] /Users/crystal/.gradle/caches/transforms-3/f1aa0d3e497a0cc8f60a7e018be34eb2/transformed/activity-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.1] /Users/crystal/.gradle/caches/transforms-3/f1aa0d3e497a0cc8f60a7e018be34eb2/transformed/activity-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/crystal/.gradle/caches/transforms-3/5584101b0846dbf2ae9c8c6d58dbcd14/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/crystal/.gradle/caches/transforms-3/5584101b0846dbf2ae9c8c6d58dbcd14/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/crystal/.gradle/caches/transforms-3/23d237170821e7c0f0c86f18fb966b19/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/crystal/.gradle/caches/transforms-3/23d237170821e7c0f0c86f18fb966b19/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/crystal/.gradle/caches/transforms-3/53eed1c5af8043bf46d4e2ad0e995e7b/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/crystal/.gradle/caches/transforms-3/53eed1c5af8043bf46d4e2ad0e995e7b/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/27a213b26d0bc1381a1dda68a19462f8/transformed/lifecycle-livedata-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/27a213b26d0bc1381a1dda68a19462f8/transformed/lifecycle-livedata-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/8eb215a3a00290fa2484fa38f983b19f/transformed/lifecycle-livedata-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/8eb215a3a00290fa2484fa38f983b19f/transformed/lifecycle-livedata-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/8fd87b0d79ca1f7787d3f91c83ac2e09/transformed/lifecycle-livedata-core-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/8fd87b0d79ca1f7787d3f91c83ac2e09/transformed/lifecycle-livedata-core-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/d7797f6beb3068a5677ccf7f58c304c9/transformed/lifecycle-livedata-core-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/d7797f6beb3068a5677ccf7f58c304c9/transformed/lifecycle-livedata-core-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/29bb510123548d5dfceca37ba27838d7/transformed/lifecycle-viewmodel-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/29bb510123548d5dfceca37ba27838d7/transformed/lifecycle-viewmodel-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/f9eca086d55d66e6deb6cf2e7036fa77/transformed/lifecycle-viewmodel-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/f9eca086d55d66e6deb6cf2e7036fa77/transformed/lifecycle-viewmodel-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/711d5e496713f65f801eb301f7ba2a62/transformed/lifecycle-viewmodel-savedstate-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/711d5e496713f65f801eb301f7ba2a62/transformed/lifecycle-viewmodel-savedstate-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/f4e432e5a60dc138e159a8341a908e1f/transformed/lifecycle-viewmodel-compose-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/f4e432e5a60dc138e159a8341a908e1f/transformed/lifecycle-viewmodel-compose-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.3.3] /Users/crystal/.gradle/caches/transforms-3/ac2e33a7db689d2c4f123dd37c8e67d2/transformed/ui-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.3.3] /Users/crystal/.gradle/caches/transforms-3/ac2e33a7db689d2c4f123dd37c8e67d2/transformed/ui-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/crystal/.gradle/caches/transforms-3/234d77cd977e864b377326b610c33d3c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/crystal/.gradle/caches/transforms-3/234d77cd977e864b377326b610c33d3c/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/crystal/.gradle/caches/transforms-3/6f1c362f917f25d22179de8b0da49b13/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/crystal/.gradle/caches/transforms-3/6f1c362f917f25d22179de8b0da49b13/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/crystal/.gradle/caches/transforms-3/3b0fc9dc645983217ee98c15de795848/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/crystal/.gradle/caches/transforms-3/3b0fc9dc645983217ee98c15de795848/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/crystal/.gradle/caches/transforms-3/2c231e0fcd4f695d63c308211bba59ed/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/crystal/.gradle/caches/transforms-3/2c231e0fcd4f695d63c308211bba59ed/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.ui:ui-text:1.3.3] /Users/crystal/.gradle/caches/transforms-3/5cff8d22c4e543bae84be644b5149a1d/transformed/ui-text-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.3.3] /Users/crystal/.gradle/caches/transforms-3/5cff8d22c4e543bae84be644b5149a1d/transformed/ui-text-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/crystal/.gradle/caches/transforms-3/aa959aa83fc5f22e1df86a2bbfe18bf0/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/crystal/.gradle/caches/transforms-3/aa959aa83fc5f22e1df86a2bbfe18bf0/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/crystal/.gradle/caches/transforms-3/cb4a60029c9c76e5380d5c8db91bd2ea/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/crystal/.gradle/caches/transforms-3/cb4a60029c9c76e5380d5c8db91bd2ea/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/crystal/.gradle/caches/transforms-3/6333dbb3fd15bed7dbf9dc3c840cff05/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/crystal/.gradle/caches/transforms-3/6333dbb3fd15bed7dbf9dc3c840cff05/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/crystal/.gradle/caches/transforms-3/8216c4e0252d96c1dcedc063257525aa/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/crystal/.gradle/caches/transforms-3/8216c4e0252d96c1dcedc063257525aa/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/crystal/.gradle/caches/transforms-3/06ad471a7cb7aecee0a5230384b75f03/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/crystal/.gradle/caches/transforms-3/06ad471a7cb7aecee0a5230384b75f03/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/2a49a553effda2b4db4badbea8933b91/transformed/lifecycle-runtime-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/2a49a553effda2b4db4badbea8933b91/transformed/lifecycle-runtime-ktx-2.6.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/crystal/.gradle/caches/transforms-3/9b45b21763d01e9b6c4dee7747f6a1ef/transformed/lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/crystal/.gradle/caches/transforms-3/9b45b21763d01e9b6c4dee7747f6a1ef/transformed/lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/dd603ae1a56270cf7d7b82425b286034/transformed/lifecycle-runtime-2.6.0-alpha03/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/dd603ae1a56270cf7d7b82425b286034/transformed/lifecycle-runtime-2.6.0-alpha03/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/ca176dce8d6709305b7713bbc4403e1f/transformed/lifecycle-runtime-compose-2.6.0-alpha03/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose:2.6.0-alpha03] /Users/crystal/.gradle/caches/transforms-3/ca176dce8d6709305b7713bbc4403e1f/transformed/lifecycle-runtime-compose-2.6.0-alpha03/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.3.3] /Users/crystal/.gradle/caches/transforms-3/f6cc47f7d813b5b1ecffe1325fd864ae/transformed/ui-tooling-preview-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.3.3] /Users/crystal/.gradle/caches/transforms-3/f6cc47f7d813b5b1ecffe1325fd864ae/transformed/ui-tooling-preview-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.3.3] /Users/crystal/.gradle/caches/transforms-3/18b2dafa94996e4a597d1d75a21683fc/transformed/runtime-saveable-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.3.3] /Users/crystal/.gradle/caches/transforms-3/18b2dafa94996e4a597d1d75a21683fc/transformed/runtime-saveable-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7cfe0e08355756695c776ebfc6bd842d/transformed/ui-graphics-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7cfe0e08355756695c776ebfc6bd842d/transformed/ui-graphics-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.3.3] /Users/crystal/.gradle/caches/transforms-3/6ee0500b5221808492671fd9f4e08e31/transformed/ui-unit-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.3.3] /Users/crystal/.gradle/caches/transforms-3/6ee0500b5221808492671fd9f4e08e31/transformed/ui-unit-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.3.3] /Users/crystal/.gradle/caches/transforms-3/1826ab170c8c09b8f6bc84d87e9c9869/transformed/ui-geometry-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.3.3] /Users/crystal/.gradle/caches/transforms-3/1826ab170c8c09b8f6bc84d87e9c9869/transformed/ui-geometry-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.3.3] /Users/crystal/.gradle/caches/transforms-3/4cbb47f92148f858f413bc8804bd2ffa/transformed/runtime-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.3.3] /Users/crystal/.gradle/caches/transforms-3/4cbb47f92148f858f413bc8804bd2ffa/transformed/runtime-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.3.3] /Users/crystal/.gradle/caches/transforms-3/108cf31a06d5ad4e05c1f171a027abbb/transformed/ui-util-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.3.3] /Users/crystal/.gradle/caches/transforms-3/108cf31a06d5ad4e05c1f171a027abbb/transformed/ui-util-1.3.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/crystal/.gradle/caches/transforms-3/2ec63acca88fa95546e72233105fab71/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/crystal/.gradle/caches/transforms-3/2ec63acca88fa95546e72233105fab71/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:21:5-22:38
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:21:5-22:38
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/crystal/.gradle/caches/transforms-3/909f276ba94850ba1a8f253fcf24e4f6/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/crystal/.gradle/caches/transforms-3/909f276ba94850ba1a8f253fcf24e4f6/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/crystal/.gradle/caches/transforms-3/07ec1f7a09fdfaffd85ba5069a948748/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/crystal/.gradle/caches/transforms-3/07ec1f7a09fdfaffd85ba5069a948748/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/crystal/.gradle/caches/transforms-3/ed1d29e47075543afef15106d9625438/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/crystal/.gradle/caches/transforms-3/ed1d29e47075543afef15106d9625438/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/crystal/.gradle/caches/transforms-3/89193067d1cb253f5c4647362690eeb6/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/crystal/.gradle/caches/transforms-3/89193067d1cb253f5c4647362690eeb6/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/crystal/.gradle/caches/transforms-3/ff7b793448ce9d755cbf8936595319d0/transformed/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/crystal/.gradle/caches/transforms-3/ff7b793448ce9d755cbf8936595319d0/transformed/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/crystal/.gradle/caches/transforms-3/d9cbeeb7d23a244947ef331cd7197511/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/crystal/.gradle/caches/transforms-3/d9cbeeb7d23a244947ef331cd7197511/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/crystal/.gradle/caches/transforms-3/bdac9c7382c1ac15bc3cb4de702369e2/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/crystal/.gradle/caches/transforms-3/bdac9c7382c1ac15bc3cb4de702369e2/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		ADDED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/crystal/Android/jetpackcamp/codelab/09.Blur_omatic_workmanager/app/src/main/AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling:1.3.3] /Users/crystal/.gradle/caches/transforms-3/7c32a1ef270a7c02a2d21d2730bc48ae/transformed/ui-tooling-1.3.3/AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.3.3] /Users/crystal/.gradle/caches/transforms-3/e3867731ffe91c70c8e738803f9f66cc/transformed/ui-test-manifest-1.3.3/AndroidManifest.xml:24:13-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:25:9-33:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:25:9-33:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/crystal/.gradle/caches/transforms-3/2b33adfc9bf378def2bfd3fe367e2da6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:35:13-31
+	android:authorities
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:46:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:53:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] /Users/crystal/.gradle/caches/transforms-3/c3539b276f51dae4481c1793631c4799/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/crystal/.gradle/caches/transforms-3/eef7cc4b78bc8a095b727078b719585f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+permission#com.example.bluromatic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+uses-permission#com.example.bluromatic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/crystal/.gradle/caches/transforms-3/0802dc12b29cc0f51f0dac122ee64f37/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/crystal/.gradle/caches/transforms-3/27972364e8222c6eb1951054e5fd1b51/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:30:13-32:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:32:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:31:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:35:9-47:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:38:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:40:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:37:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:36:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:41:13-43:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:42:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:42:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:44:13-46:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:45:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.2.0] /Users/crystal/.gradle/caches/transforms-3/e9076673cffe6493cd0937c595e4f8d6/transformed/profileinstaller-1.2.0/AndroidManifest.xml:45:25-82
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] /Users/crystal/.gradle/caches/transforms-3/2604b3cbb2fb0d9d5362ad1753453b78/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74

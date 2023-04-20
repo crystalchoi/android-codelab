@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color purple_200
+color purple_500
+color purple_700
+drawable android_cupcake
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string blur_lv_1
+string blur_lv_2
+string blur_lv_3
+string blur_title
+string blurring_image
+string cancel_work
+string cleaning_up_files
+string description_image
+string error_applying_blur
+string error_cleaning_file
+string error_saving_image
+string go
+string invalid_input_uri
+string saving_image
+string see_file
+string select_image
+string set_permissions_in_settings
+string writing_to_mediaStore_failed
+style Theme.BluromaticTheme

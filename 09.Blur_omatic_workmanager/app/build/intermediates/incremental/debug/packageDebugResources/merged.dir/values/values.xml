@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <string name="app_name">Blur-O-Matic</string>
+    <string name="blur_lv_1">A little blurred</string>
+    <string name="blur_lv_2">More blurred</string>
+    <string name="blur_lv_3">The most blurred</string>
+    <string name="blur_title">Select Blur Amount</string>
+    <string name="blurring_image">Blurring image</string>
+    <string name="cancel_work">Cancel Work</string>
+    <string name="cleaning_up_files">Cleaning up old temporary files</string>
+    <string name="description_image">The image to blur and save.</string>
+    <string name="error_applying_blur">Error applying blur</string>
+    <string name="error_cleaning_file">Error cleaning up old temporary files</string>
+    <string name="error_saving_image">Error saving image</string>
+    <string name="go">Go</string>
+    <string name="invalid_input_uri">Invalid input uri</string>
+    <string name="saving_image">Saving image</string>
+    <string name="see_file">See File</string>
+    <string name="select_image">Select Image</string>
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+        WorkManager Demo -> App Permissions and grant access to Storage.</string>
+    <string name="writing_to_mediaStore_failed">Writing to MediaStore failed</string>
+    <style name="Theme.BluromaticTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>
